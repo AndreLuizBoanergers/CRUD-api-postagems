@@ -1,10 +1,10 @@
 <?php
-class ConexaoBancoDados{
+class ConexaoBancoDados {
 	private $host = 'localhost';
 	private $usuario = 'root';
 	private $senha = '';
 	private $banco = 'yeshua';
-	private $conexao;
+	protected $conexao;
 
 	public function __construct(){
 		$this->conectar();
@@ -14,7 +14,7 @@ class ConexaoBancoDados{
 		$this->conexao = mysqli_connect($this->host, $this->usuario, $this->senha, $this->banco);
 
 		if(!$this->conexao){
-			die(json_encode(array('status'=>'Erro na conexão','mensagem'=> mysqli_connect_error()));
+			echo json_encode(array('status'=>'Erro na conexão','mensagem'=> mysqli_connect_error()));
 		}
 	}
 

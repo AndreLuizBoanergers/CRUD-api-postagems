@@ -10,21 +10,23 @@
 	<div>
 		<form action="index.php" method="post" class="form-control w-50">
 			<div class="d-flex">
-				<input type="text" class="form-control" placeholder="Titulo">
+				<input type="text" class="form-control" placeholder="Titulo" id="titulo">
 				
-				<input type="text" class="form-control" placeholder="Imagen">
+				<input type="text" class="form-control" placeholder="Imagen" id="imgLink">
 			</div>
 			<div>
-				<input type="text" class="form-control w-100" placeholder="SubTitulo">
+				<input type="text" class="form-control w-100" placeholder="SubTitulo" id="subtitulo">
 			</div>
 			<div>
-				<textarea name="" id="" cols="100" rows="10" class="form-control"></textarea>
+				<textarea name="" cols="100" rows="10" class="form-control" id="conteudo"></textarea>
 			</div>
 			<div>
-				<input type="submit" name="btn" class="btn btn-success">
+				<input type="submit" name="btn" class="btn btn-success" id="btnAdm">
 			</div>
 		</form>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<script src="../assets/js/script2.js"></script>
 </body>
 </html>
